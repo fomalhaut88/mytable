@@ -35,7 +35,7 @@ impl Table {
         self.file.metadata().unwrap().len() as usize / self.block_size
     }
 
-    /// Table is empty
+    /// Returns true if the table is empty, else false.
     pub fn empty(&self) -> bool {
         self.size() == 0
     }
