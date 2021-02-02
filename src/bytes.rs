@@ -2,7 +2,7 @@ use std::fmt;
 
 
 /// A structure to store bytes of data and the length.
-#[derive(Copy, Clone, PartialOrd, PartialEq)]
+#[derive(Copy, Clone, PartialOrd, PartialEq, Eq, Hash)]
 pub struct Bytes<const N: usize> {
     length: usize,
     bytes: [u8; N],
