@@ -1,6 +1,9 @@
 #![feature(const_generics)]
 #![allow(incomplete_features)]
 
+/// Bytes implements a byte array with fixed size in bytes.
+pub mod bytes;
+
 /// Varchar implements a string with fixed size in bytes.
 pub mod varchar;
 
@@ -13,6 +16,7 @@ pub mod table_trait;
 /// TableIndex implements an index for a value in the table.
 pub mod table_index;
 
+pub use bytes::*;
 pub use varchar::*;
 pub use table::*;
 pub use table_trait::*;
