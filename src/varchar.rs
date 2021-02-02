@@ -2,7 +2,7 @@ use std::fmt;
 
 
 /// A structure to store bytes of data and the length of the string.
-#[derive(Copy, Clone, PartialOrd, PartialEq, Eq, Hash)]
+#[derive(Copy, Clone, PartialOrd, PartialEq, Eq, Hash, Ord)]
 pub struct Varchar<const N: usize> {
     length: usize,
     bytes: [u8; N],
